@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --accent-color: #603935;
+    --second-color: #c4b0a7;
+    --third-color: #f8e2c3;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--third-color);
+}
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.container {
+    background-color: var(--second-color);
+    color: var(--accent-color);
+    min-height: 1000px;
+}
+
+.about__me {
+    margin: 50px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.my__github {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.github__logo {
+    height: 35px;
+    margin-right: 15px;
+}
+
+.general__main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+}
+
+.my__name {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.text-h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text-h2 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.text-p {
+    font-size: 20px;
+}
+
+.container__2 {
+    background-color: var(--accent-color);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.div__img{
+    margin: 0 auto;
+}
+.my__photo {
+    width: 400px;
+    border-radius: 100%;
+}
+
+
+.footer {
+    background-color: var(--third-color);
+    color: var(--accent-color);
+}
+
+.other__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.text-h2__other {
+    margin-bottom: 10px;
+}
+
+.a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.a:hover {
+    font-weight: 700;
+}
+
+@media screen and (max-width:1200px) {
+    .my__name{
+        text-align: center;
+    }
+    .my__photo{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:1070px) {
+    .header{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .my__photo{
+        width: 200px;
+    }
+}
